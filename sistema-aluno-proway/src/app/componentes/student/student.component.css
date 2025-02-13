@@ -1,0 +1,18 @@
+.card {
+    border: solid 7px rgb(28, 182, 87);
+    width: 280px;
+    padding: 12px;
+    margin: 0 8px;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    text-align: center;
+}

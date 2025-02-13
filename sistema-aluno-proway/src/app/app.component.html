@@ -1,7 +1,16 @@
-<div>
+<header>
   <h1>{{ title }}</h1>
-</div>
+</header>
 
-<div>
-  <app-student></app-student>
-</div>
+
+
+<main>
+  <app-student [aluno]="listaAlunos[0]"></app-student>
+  <app-student [aluno]="listaAlunos[1]"></app-student>
+  <app-student [aluno]="listaAlunos[2]"></app-student>
+
+</main>
+
+<footer>
+  <p>- Desenvolvido Por Alunos Proway -</p>
+</footer>
