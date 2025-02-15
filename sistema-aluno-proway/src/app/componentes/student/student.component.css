@@ -2,11 +2,12 @@
     border: solid 7px rgb(28, 182, 87);
     width: 280px;
     padding: 12px;
-    margin: 0 8px;
+    margin: 8px;
 }
 
 .card h2 {
     text-align: center;
+    margin: 1px;
 }
 
 .card img {
@@ -15,4 +16,20 @@
 
 .card h3 {
     text-align: center;
+}
+.aprovacao {
+    background-color: silver;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    color: #FFF;
+}
+
+.aprovado {
+    background-color: rgb(51, 205, 31);
+}
+
+.reprovado {
+    background-color: rgb(238, 49, 11);
 }

@@ -1,9 +1,14 @@
 <div class="card">
-    <img src="/assets/images/user.png" alt="">
+    <!-- <img src="{{ aluno.img }}" alt=""> -->
+    <img [src]="aluno.img" alt="">
     <h2>{{ aluno.nome }}</h2>
     <p><strong>Curso: </strong>{{ aluno.curso }}</p>
     <p><strong>Matrícula: </strong>{{ aluno.matricula }}</p>
     <p><strong>Email: </strong>{{ aluno.email }}</p>
-    <p><strong>Status de Cadastro: </strong>{{ aluno.cadastro ? 'Ativo' : 'Inativo' }}</p>
-    <h3><strong>Proway</strong></h3>
+    <div class="aprovacao" [ngClass]="aluno.cadastro ? 'aprovado' : 'reprovado' ">
+        <p>
+            Aluno: {{ aluno.cadastro ? 'Aprovado' : 'Reprovado' }}
+        </p>
+    </div>
+    <h3><strong [ngStyle]="{ 'font-size' : textoMedio }">Proway</strong></h3>
 </div>

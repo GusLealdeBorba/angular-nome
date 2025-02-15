@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Aluno } from '../../interfaces/Aluno';
 
 @Component({
   selector: 'app-student',
@@ -9,5 +10,10 @@ import { Component, Input } from '@angular/core';
 export class StudentComponent {
 
   @Input()
-  aluno: any = {};
+  aluno! : Aluno;
+
+
+  textoGrande: string = '35px';
+  textoMedio: string = '25px';
+  textoPequeno: string = '15px';
 }
